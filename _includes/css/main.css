@@ -156,7 +156,21 @@ a:focus {
     border-top: 2px solid #000;
 }
 
-@media(min-width:767px) {
+
+
+@media(max-width: 768px) {
+    .navbar {
+        background: #486BD6;
+    }
+
+    .navbar .btn-blue {
+        background: white;
+        color: #1b1b1b;
+        margin: 10px 0 20px;
+    }
+}
+
+@media(min-width:769px) {
     .section-divider {
         width: 700px;
         margin: auto;
@@ -209,6 +223,10 @@ a:focus {
     -o-background-size: cover;
 }
 
+.intro .intro-body {
+    padding: 100px 0 0;
+}
+
 .intro .intro-body .brand-heading {
     font-size: 3.5em;
 }
@@ -238,7 +256,8 @@ a:focus {
     margin-top: 0px;
 }
 
-@media(min-width:767px) {
+
+@media(min-width:769px) {
     .intro .intro-body {
         padding: 100px 0;
         text-align: left;
@@ -411,7 +430,13 @@ a:focus {
 }
 
 .features-section .row {
-    display: block;
+    flex-wrap: wrap;
+}
+
+.features-section .column-revers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
 
 .testimonial-section {
@@ -454,10 +479,15 @@ a:focus {
     color: white;
 }
 
-@media(min-width:767px) {
+@media(min-width:769px) {
 
     .features-section {
         padding: 100px 0;
+    }
+
+    .features-section .column-revers {
+        display: flex;
+        flex-direction: row;
     }
 
     #map {
@@ -578,4 +608,27 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+@media(max-width: 500px) {
+    .navbar-custom .navbar-brand {
+        height: 70px;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 40px !important;
+    }
+    .intro .intro-body {
+        padding: 70px 0 0px;
+    }
+    h2 {
+        font-size: 20px !important;
+    }
+    label {
+        font-size: 18px !important;
+    }
+    p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+    }
+
 }
