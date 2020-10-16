@@ -3,14 +3,11 @@
     <div class="intro-body">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">{{ .hero.title }}</h1>
-                    <p class="intro-text">{{ .hero.description }}<br>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
+                <h1 class="brand-heading">{{ page.hero.title }}</h1>
+                <p class="intro-text">{{ page.hero.description }}<br>
+                <button class="btn btn-blue">{{ page.hero.buttonTxt }}</button>
             </div>
         </div>
+        <img src={{page.hero.img}} alt="heroimage" />
     </div>
 </header>

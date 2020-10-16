@@ -6,7 +6,7 @@ description: "überall Mobil sein"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#000000'
+  primary-dark: '#1b1b1b'
   links: '#219ab3'
 
 # Footer settings
