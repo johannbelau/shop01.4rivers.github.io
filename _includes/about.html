@@ -5,7 +5,7 @@
             <label>{{ page.about.label }}</label>
             <h2>{{ page.about.title }}</h2>
             <p>{{ page.about.description }}</p>
-            <img src={{ page.about.img }} alt="aboutImage" />
+            <img src={{ page.about.img | prepend: site.baseurl }} alt="aboutImage" />
             <div>
                 <button class="btn btn-red">{{page.about.buttonTxt}}</button>
             </div>

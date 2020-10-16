@@ -8,6 +8,6 @@
                 <button class="btn btn-blue">{{ page.hero.buttonTxt }}</button>
             </div>
         </div>
-        <img src={{page.hero.img}} alt="heroimage" />
+        <img src="{{page.hero.img | prepend: site.baseurl }}" alt="heroimage" />
     </div>
 </header>
