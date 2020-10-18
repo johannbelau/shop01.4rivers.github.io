@@ -1,0 +1,14 @@
+languages: 
+  - language: "de" 
+    links: 
+      - title: "Ihre Vorteile"
+        url: "#how-to-use" 
+      - title: "Überblick"
+        url: "#features"
+  - language: "en" 
+    links: 
+      - title: "Your advantages"
+        url: "#how-to-use"
+      - title: "Overview"
+        url: "#features"
+      

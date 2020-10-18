@@ -17,17 +17,34 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    {% for item in site.data.navigation.languages %} 
+                        {% if item.language == page.lang %} 
+                            {% for link in item.links %} 
+                                <li>
+                                    <a class="page-scroll" href="{{ link.url }}">{{ link.title }}</a>
+                                </li>
+                            {% endfor %} 
+                        {% endif %} 
+                    {% endfor %}
+                        {% if page.lang == "de" %}
+                        <a href="{{site.googleForm}}" target="_blank">
+                            <button class="btn-blue">Mehr erfahren</button>
+                        </a>
+                        {% else %}
+                        <a href="{{site.googleForm}}" target="_blank">
+                            <button class="btn-blue">Learn More</button>
+                        </a>
+                        {% endif %}
                     <li>
-                        <a class="page-scroll" href="#about">Mehr erfahren</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#features">Technische Details</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#how-to-use">Intuitive Anwendung</a>
-                    </li>
-                    <li>
-                        <button class="btn-blue">Jetzt bestellen</button>
+                        {% if page.lang == "de" %}
+                        <a href="{{ "/en" | prepend: site.baseurl}}" ">
+                            En
+                        </a>
+                        {% else %}
+                        <a href="{{"/" | prepend: site.baseurl}}"">
+                            DE
+                        </a>
+                        {% endif %}
                     </li>
                 </ul>
             </div>

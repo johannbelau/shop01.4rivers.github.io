@@ -189,6 +189,14 @@ a:focus {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-nav li {
+        margin: 0 5px;
+    }
+
     .navbar-custom .container {
         display: flex;
         align-items: center;
@@ -246,7 +254,7 @@ a:focus {
 }
 
 .intro .intro-body .btn-blue {
-    margin-top: 20px;
+    margin: 20px 20px 0;    
     font-size: 20px;
     font-weight: 600;
 }
@@ -363,28 +371,6 @@ a:focus {
     }
 }
 
-.about-section {
-    padding: 70px 0 50px;
-    background: #1b1b1b;
-}
-
-.about-section img {
-    width: 100%;
-    max-width: 700px;
-    margin: -10px auto 20px;
-}
-
-.about-section label {
-    margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 1.5;
-    text-transform: uppercase;
-}
-
-.about-sectio .btn-red {
-    margin: 20px 0;
-}
-
 .features-section {
     width: 100%;
     padding: 50px 0;
@@ -439,29 +425,6 @@ a:focus {
     flex-direction: column-reverse;
 }
 
-.testimonial-section {
-    padding: 50px 0;
-    background: white;
-    color: black;
-}
-
-.testimonial-section .left {
-    float: right;
-    padding-top: 60px;
-    color: #1b1b1b;
-}
-
-.testimonial-section .right {
-    float: left;
-    padding-top: 60px;
-    color: #1b1b1b;
-}
-
-.testimonial-section .carousel-inner img{
-    width: 50px;
-    margin: auto;
-    margin-bottom: 30px;
-}
 
 .contact-section {
     padding: 100px 0;
@@ -472,7 +435,8 @@ a:focus {
 
 .contact-section .btn {
     padding: 15px;
-    margin: 10px    ;
+    margin: 10px;
+    font-size: 20px;
 }
 
 .contact-section .btn-default {
@@ -498,6 +462,13 @@ a:focus {
         display: flex;
         align-items: center;
     }
+    .contact-section .btn {
+        padding: 20px 30px;
+        margin: 10px;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
 }
 
 .btn {

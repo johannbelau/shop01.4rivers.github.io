@@ -1,7 +1,7 @@
 # Site settings
 title: Shop01-4rivers
 email: johann.belau@4rivers.de
-url: https://shop01.4rivers.github.io
+url: https://shop01.4rivers.de
 description: "überall Mobil sein"
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -10,20 +10,11 @@ color:
   links: '#219ab3'
 
 # Footer settings
-footer: 4 Rivers
+footer: 4 Rivers GmbH
+info: Impressum
+infoLink: https://www.4rivers.de/impressum
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+googleForm: https://docs.google.com/forms/d/e/1FAIpQLSevotutSFa-ad9k8cQF6mLtK4_htEDsb7J0zmFX9wKxX968yA/viewform
 
 # Build settings
 markdown: kramdown

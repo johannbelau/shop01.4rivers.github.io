@@ -11,7 +11,12 @@
                         <h2>{{ feature.title }}</h2>
                         <p>{{ feature.description }}</p>
                         {% if feature.buttonTxt %}
-                            <button class="btn btn-red">{{ feature.buttonTxt}}</button>
+                            <a href={{ feature.buttonLink | prepend: site.baseurl }}>
+                                <button class="btn btn-red">{{ feature.buttonTxt}}</button>
+                            </a>
+                        {% endif %}
+                        {% if feature.orderButton %}
+                            <button class="btn btn-blue">{{ feature.orderButton}}</button>
                         {% endif %}
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 text-center">
@@ -28,7 +33,12 @@
                         <h2>{{ feature.title }}</h2>
                         <p>{{ feature.description }}</p>
                         {% if feature.buttonTxt %}
-                            <button class="btn btn-red">{{ feature.buttonTxt}}</button>
+                            <a href={{ feature.buttonLink | prepend: site.baseurl }}>
+                                <button class="btn btn-red">{{ feature.buttonTxt}}</button>
+                            </a>
+                        {% endif %}
+                        {% if feature.orderButton %}
+                            <button class="btn btn-blue">{{ feature.orderButton}}</button>
                         {% endif %}
                     </div>
                 </div>
