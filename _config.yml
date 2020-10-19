@@ -15,6 +15,7 @@ info: Impressum
 infoLink: https://www.4rivers.de/impressum
 
 googleOrderForm: https://docs.google.com/forms/d/1FnHEdnmmAPX-AOX3sHvLfUTaJTrZIKvPt44mvF_VAi8/edit
+contactEmail: info@4rivers.de
 
 # Build settings
 markdown: kramdown
