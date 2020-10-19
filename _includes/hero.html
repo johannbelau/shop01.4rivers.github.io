@@ -5,7 +5,9 @@
             <div class="row">
                 <h1 class="brand-heading">{{ page.hero.title }}</h1>
                 <h2 class="intro-text">{{ page.hero.description }}</h2>
-                <button class="btn btn-blue">{{ page.hero.buttonTxt }}</button>
+                <a href={{site.googleOrderForm}} target="_blank">
+                    <button class="btn btn-blue">{{ page.hero.buttonTxt }}</button>
+                </a>
             </div>
         </div>
         <img src="{{page.hero.img | prepend: site.baseurl }}" alt="heroimage" />
